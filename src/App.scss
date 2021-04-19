@@ -33,92 +33,11 @@
     position: relative;
     background-color: #80808014;
     display: flex;
-    .card-container {
-        flex: 0.8;
-        text-align: center;
-        .card {
-            display: inline-block;
-            padding: 20px;
-            box-shadow: 0 1px 3px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.04)!important;
-            border-radius: 16px!important;
-            margin: 10px;
-            height: 380px;
-            .image-container {
-                width: 200px;
-                height: 200px;
-                img {
-                    width: 200px;
-                    height: 200px;
-                }
-            }
-            .heading {
-                font-size: 18px;
-                width: 200px;
-                overflow: hidden;
-                color: blueviolet;
-                margin-top: 10px 0px;
-            }
-            .mission_id {
-                font-size: 18px;
-                width: 200px;
-                text-align: left;
-                margin: 5px 0px;
-                .label {
-                    font-weight: bold;
-                }
-            }
-            .field {
-                font-size: 18px;
-                text-align: left;
-                width: 200px;
-                margin: 5px 0px;
-                .label {
-                    font-weight: bold;
-                    .id {
-                        font-weight: normal;
-                    }
-                }
-            }
-        }
-    }
-    .filter-container {
-        flex: 0.2;
-        min-width: 300px;
-        .card {
-            padding: 20px;
-            box-shadow: 0 1px 3px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.04)!important;
-            border-radius: 16px!important;
-            width: 100%;
-            margin: 10px;
-            .heading {
-                font-size: 22px;
-                color: black;
-            }
-            .field-container {
-                .head {
-                    font-size: 16px;
-                    color: black;
-                    text-align: center;
-                    margin: 0px 10px;
-                    border-bottom: 1px solid;
-                }
-                .years {
-                    text-align: center;
-                    .year {
-                        display: inline-block;
-                        margin: 10px;
-                        padding: 10px;
-                        width: 40%;
-                        background-color: blueviolet;
-                        color: white;
-                        border-radius: 2px!important;
-                        cursor: pointer;
-                        &.enable {
-                            background-color: #8a2be285;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
+@media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+    }
+  }

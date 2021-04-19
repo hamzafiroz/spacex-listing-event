@@ -1,0 +1,56 @@
+.card-container {
+    flex: 0.8;
+    margin: 0 30px;
+    .card {
+        display: inline-block;
+        vertical-align: top;
+        padding: 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.04)!important;
+        border-radius: 16px!important;
+        margin: 10px;
+        background-color: white;
+        .image-container {
+            width: 200px;
+            height: 200px;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .heading {
+            font-size: 18px;
+            width: 200px;
+            overflow: hidden;
+            color: blueviolet;
+            text-align: center;
+            margin-top: 10px 0px;
+        }
+        .mission_id {
+            font-size: 14px;
+            width: 200px;
+            text-align: left;
+            margin: 5px 0px;
+            .label {
+                font-weight: bold;
+            }
+        }
+        .field {
+            font-size: 14px;
+            text-align: left;
+            width: 200px;
+            margin: 5px 0px;
+            .label {
+                font-weight: bold;
+                .id {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+    .card-container {
+       text-align: center;
+    }
+  }
