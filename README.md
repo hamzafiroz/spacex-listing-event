@@ -16,6 +16,7 @@ SpaceX-EventListing uses a number of open source projects to work properly:
 
 - [ReactJS] - HTML enhanced for web apps!
 - [CRA] - prebuild boilerplate with webpack and bebel configured
+- [Heroku] - Deployed with heroku
 
 
 And of course SpaceX-EventListing itself is open source with a [public repository][dill]
