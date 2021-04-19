@@ -1,8 +1,32 @@
-* {
+
+
+
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: local('Quicksand-Regular'), url(fonts/Quicksand-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Bold';
+    src: local('Quicksand-Bold'), url(fonts/Quicksand-Bold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Medium';
+    src: local('Quicksand-Medium'), url(fonts/Quicksand-Medium.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Quicksand-Light';
+    src: local('Quicksand-Light'), url(fonts/Quicksand-Light.ttf) format('truetype');
+  }
+  
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    font-family: 'Quicksand-Regular';
 }
 
 .container {
@@ -14,11 +38,11 @@
         text-align: center;
         .card {
             display: inline-block;
-            text-align: center;
             padding: 20px;
             box-shadow: 0 1px 3px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.04)!important;
             border-radius: 16px!important;
             margin: 10px;
+            height: 380px;
             .image-container {
                 width: 200px;
                 height: 200px;
@@ -32,23 +56,34 @@
                 width: 200px;
                 overflow: hidden;
                 color: blueviolet;
+                margin-top: 10px 0px;
             }
             .mission_id {
                 font-size: 18px;
+                width: 200px;
+                text-align: left;
+                margin: 5px 0px;
                 .label {
                     font-weight: bold;
                 }
             }
             .field {
                 font-size: 18px;
+                text-align: left;
+                width: 200px;
+                margin: 5px 0px;
                 .label {
                     font-weight: bold;
+                    .id {
+                        font-weight: normal;
+                    }
                 }
             }
         }
     }
     .filter-container {
         flex: 0.2;
+        min-width: 300px;
         .card {
             padding: 20px;
             box-shadow: 0 1px 3px rgba(0,0,0,.08),0 3px 20px rgba(0,0,0,.04)!important;
@@ -73,10 +108,14 @@
                         display: inline-block;
                         margin: 10px;
                         padding: 10px;
+                        width: 40%;
                         background-color: blueviolet;
                         color: white;
                         border-radius: 2px!important;
                         cursor: pointer;
+                        &.enable {
+                            background-color: #8a2be285;
+                        }
                     }
                 }
             }
