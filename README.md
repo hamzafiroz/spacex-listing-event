@@ -28,7 +28,7 @@ SpaceX-EventListing requires [npm commaded and node](https://nodejs.org/) v10+ t
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd dillinger
+cd Spacex-EventListing
 npm i
 npm start
 ```
