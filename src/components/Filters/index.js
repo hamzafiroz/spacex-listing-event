@@ -23,8 +23,8 @@ const Filters = ({filters, handleFilters}) => {
             <div className="field-container">
                 <div className="head">Successful Launch</div>
                 <div className="years">
-                  <div onClick={() => handleFilters("launch_success", true)} className={`year ${(filters["launch_success"] && filters["launch_success"] === true) ? 'enable': ''}`}>Yes</div>
-                  <div onClick={() => handleFilters("launch_success", false)} className={`year ${(filters["launch_success"] && filters["launch_success"] === false) ? 'enable': ''}`}>No</div>
+                  <div onClick={() => handleFilters("launch_success", true)} className={`year ${(filters["launch_success"] === true) ? 'enable': ''}`}>Yes</div>
+                  <div onClick={() => handleFilters("launch_success", false)} className={`year ${(filters["launch_success"] === false) ? 'enable': ''}`}>No</div>
                 </div>
             </div>
             <div className="field-container">
